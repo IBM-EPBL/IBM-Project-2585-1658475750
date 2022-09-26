@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"/>
+
+    <title>Reflux HTML CSS Template</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="C:\Users\ACER\Pictures\Camera Roll\Pic.jpg" alt="" /></a>
+            </div>
+            <div class="author-content">
+              <h4>A M Aravinth Kumar</h4>
+              <span>Computer Science Graduate</span>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#section1">About Me</a></li>
+                <li><a href="#section2">What I’m good at</a></li>
+                <li><a href="#section3">My Work</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="https://www.linkedin.com/in/aravinth-kumar-6299a41b3/"><i class="fa fa-linkedin"></i></a>
+                </li>
+                
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <section class="section about-me" data-section="section1">
+        <div class="container">
+          <div class="section-heading">
+            <h2>About Me</h2>
+            <div class="line-dec"></div>
+            <span>Final Year Computer Science Graduate</span>
+          </div>
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="assets/images/left-image.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>THIS IS ME</h4>
+                  <p>
+                    I'm an inquisitive, passionate and an optimistic computer science graduate looking forward to be a part of an organization where I can
+              expand and enrich my skills and subsequently contribute to the organization's growth.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="section my-services" data-section="section2">
+        <div class="container">
+          <div class="section-heading">
+            <h2>What I’m good at?</h2>
+            <div class="line-dec"></div>
+            
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="second-service-icon service-icon"></div>
+                <h4>HTML and CSS3</h4>
+               
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="second-service-icon service-icon"></div>
+                <h4>Java</h4>
+                
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="second-service-icon service-icon"></div>
+                <h4>SQL</h4>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="second-service-icon service-icon"></div>
+                <h4>C++</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-work" data-section="section3">
+        <div class="container">
+          <div class="section-heading">
+            <h2>My Work</h2>
+            <div class="line-dec"></div>
+            <span> <p>Facial Emotion Recognition</p>
+              <p ></p>Designed a deep learning CNN model that can recognize the user’s
+facial emotion and classify them into one among the 7 emotions
+such as happy, sad, neutral, disgust, angry, surprise, fear.
+Based on the classified emotion the user will be recommended
+songs.
+Tech Stack: Python, OpenCV.</span><br><br>
+            <span><p>Cherry on Top</p>
+              Created an ECommerce website for ordering cakes. After logging in
+              or logging on, the list of cakes available along with their price will
+              be displayed in the webpage.
+              Once the order is placed after selecting the cake and specifying the
+              quantity, the order details will be stored in the database.
+              Tech Stack : HTML, CSS, JavaScript, PHP, SQL.</span><br><br>
+            <span>
+              <p>Lane Line Detection</p>
+Developed a model that could predict the lane lines from the live
+video. Two models were developed for detecting the lane lines.
+Feature extraction technique, Hough transform along with canny
+edge detection technique is used for detecting the lane line.
+Tech Stack: Python, Hough transform, Canny algorithm, OpenCV.
+            </span>
+          </div>
+          
+        </div>
+      </section>
+
+      
+    </div>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>

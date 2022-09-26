@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block title %} Home {% endblock %} {% block content %}
+<div class="jumbotron jumbotron-fluid" style="background-color: #e3f2fd;">
+    <div class="container mb-5">
+        <h1 class="p-5">Welcome {{user.username}}</h1>
+        <p class="px-5">This is the Home Page.</p>
+        <br>
+        <br>
+    </div>
+</div>
+<div class="container">
+    <h4>Your Account Details</h4>
+    <p>Email : {{user.email}}</p>
+    <p>Roll No: {{user.roll}}</p>
+    <a class="btn btn-primary btn-block" href="/logout">Log-out</a>
+</div>
+{% endblock %}
