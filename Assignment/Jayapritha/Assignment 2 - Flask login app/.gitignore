@@ -1,5 +1,4 @@
 .vscode
 webApp/__pycache__
-webApp/database.db
 __pycache__
 migrations
