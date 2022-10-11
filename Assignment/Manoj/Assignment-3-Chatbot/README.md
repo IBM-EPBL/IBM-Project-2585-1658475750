@@ -6,3 +6,6 @@ https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?background
 
 # Conditions
 ![alt text](./conditions.png)
+
+# Final Webpage
+![alt text](./webpage.png)
