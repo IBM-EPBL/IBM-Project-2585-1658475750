@@ -1,7 +1,7 @@
-![Screenshot 2022-10-14 144812](https://user-images.githubusercontent.com/53329034/195809968-9f937233-f2c0-485c-8c4d-72c00a8ccdda.png)
- ## Category : Cloud App Development
+![image](https://user-images.githubusercontent.com/53329034/195816857-68ceb182-6c34-40d1-b398-0d7d6ecf647d.png)
+## Category : Cloud App Development
+
  # Project Description
- 
 During the COVID 19 crisis, the requirement of plasma became a high priority and the donor count has become low. Saving the donor information and helping the needy by notifying the current donors list, would be a helping hand. In regard to the problem faced, an application is to be built which would take the donor details, store them and inform them upon a request.
 
 # Software Required
