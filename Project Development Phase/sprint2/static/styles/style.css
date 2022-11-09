@@ -244,3 +244,12 @@ footer{
   position: relative;
   border-top: 5px solid rgb(17, 3, 92);
 }
+
+/* Donor form */
+.donor-form{
+  box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25),
+		0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
+    background-color: #e9e9e9;
+	border-radius: 0.7rem;
+  padding:1.2rem;
+}
