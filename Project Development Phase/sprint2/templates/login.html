@@ -184,7 +184,7 @@
 <div class="container right-panel-active">
     <div class="container__form container--signup">
         <form
-            action="{{ url_for('login') }}"
+            action="{{ url_for('register') }}"
             method="post"
             class="form"
             id="form1"
@@ -208,7 +208,7 @@
                 name="password"
                 class="input"
             >
-            <button class="btn btn-primary" style="width:100%;">Register</button>
+            <button type="submit" form="form2" value="submit" class="btn btn-primary" onclick="document.getElementById('form1').submit()" style="width:100%;">Register</button>
             <br>
             <div class="div">
                 <p class="bottom">
@@ -242,7 +242,7 @@
                 class="input"
             >
             <a href="#" class="link">Forgot your password?</a>
-            <button class="btn btn-primary" style="width:100%;">Sign In</button>
+            <button type="submit" onclick="document.getElementById('form2').submit()"  form="form2" value="submit" class="btn btn-primary" style="width:100%;">Sign In</button>
             <br>
             <div class="div">
                 <p class="bottom">

@@ -49,7 +49,11 @@
                             <a class="nav-link mr-4" href="#faq">FAQs</a>
                         </li>
                     </ul>
+                    {% if login_var==0 %}
                     <a class="btn btn-outline-primary my-2 my-sm-0" href="{{ url_for('login') }}">Login / Register</a>
+                    {% else %}
+                    <a class="btn btn-outline-primary my-2 my-sm-0" href="{{ url_for('logout') }}">Logout</a>
+                    {% endif %}
                 </div>
             </nav>
         </header>

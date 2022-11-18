@@ -10,10 +10,11 @@
         <div class="col-lg-3"></div>
         <div class="col-lg-6">
             <form
-                action=""
+                action="{{ url_for('donor') }}"
                 method="post"
                 class="donor-form"
-                id="donor-form"
+                name="dform"
+                id="dform"
             >
                 <h2 class="heading">Donor Form</h2>
                 <div style="
@@ -25,27 +26,27 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="name">Donor Name</label>
-                        <input type="text" class="form-control" id="name">
+                        <input type="text" class="form-control" name="name">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="age">Age</label>
-                        <input type="number" class="form-control" id="age">
+                        <input type="number" class="form-control" name="age">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email">
+                        <input type="email" class="form-control" name="email">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="bloodgrp">Blood Group</label>
-                        <input type="text" class="form-control" id="bloodgrp">
+                        <input type="text" class="form-control" name="bloodgrp">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="mobno">Phone Number</label>
-                        <input type="number" class="form-control" id="mobno">
+                        <input type="number" class="form-control" name="mobno">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="gender">Gender</label>
@@ -55,7 +56,6 @@
                                 class="form-check-input"
                                 type="radio"
                                 name="gender"
-                                id="male"
                                 value="male"
                             >
                             <label class="form-check-label" for="male">Male</label>
@@ -65,7 +65,6 @@
                                 class="form-check-input"
                                 type="radio"
                                 name="gender"
-                                id="female"
                                 value="female"
                             >
                             <label class="form-check-label" for="female">Female</label>
@@ -74,23 +73,23 @@
                 </div>
                 <div class="form-group">
                     <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" id="inputAddress">
+                    <input type="text" class="form-control" name="inputAddress">
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity">
+                        <input type="text" class="form-control" name="inputCity">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="inputState">State</label>
-                        <input type="text" class="form-control" id="inputState">
+                        <input type="text" class="form-control" name="inputState">
                     </div>
                     <div class="form-group col-md-2">
                         <label for="inputZip">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
+                        <input type="text" class="form-control" name="inputZip">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
+                <button type="submit" onclick="document.getElementById('dform').submit()"  form="dform" value="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
             </form>
         </div>
         <div class="col-lg-3"></div>
