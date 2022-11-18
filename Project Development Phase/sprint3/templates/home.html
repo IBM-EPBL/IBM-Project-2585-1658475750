@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+<div id="main">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-10">
+                <img
+                    style="margin-left:auto;margin-right:auto;"
+                    src="{{url_for('static',filename='images/dashboard.png')}}"
+                    alt=""
+                    srcset=""
+                >
+            </div>
+        </div>
+        <hr>
+        <h2>Welcome User!</h2>
+        <div class="row">
+            <div class="card text-white bg-success m-5" style="max-width: 18rem;">
+                <div class="card-body">
+                    <a href="{{ url_for('donor') }}">
+                        <h5 class="card-title text-white">Donate Plasma</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="card text-white bg-danger m-5" style="max-width: 18rem;">
+                <div class="card-body">
+                    <a href="{{ url_for('requests') }}">
+                        <h5 class="card-title text-white">Request Plasma</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+<!-- <div class="idxpg">
+		<form action="/login" method="post">
+			<input type="submit" value="Login"/>
+		</form>
+		
+	</div> -->

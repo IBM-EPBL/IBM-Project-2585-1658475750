@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <form
+                action="{{ url_for('donor') }}"
+                method="post"
+                class="donor-form"
+                name="dform"
+                id="dform"
+            >
+                <h2 class="heading">Donor Form</h2>
+                <div style="
+                    width: 80px;
+                    position: relative;
+                    border-top: 5px solid black;
+                  "></div>
+                <br>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Donor Name</label>
+                        <input type="text" class="form-control" name="name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="age">Age</label>
+                        <input type="number" class="form-control" name="age">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="bloodgrp">Blood Group</label>
+                        <input type="text" class="form-control" name="bloodgrp">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="mobno">Phone Number</label>
+                        <input type="number" class="form-control" name="mobno">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="gender">Gender</label>
+                        <br>
+                        <div class="form-check form-check-inline">
+                            <input
+                                class="form-check-input"
+                                type="radio"
+                                name="gender"
+                                value="male"
+                            >
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input
+                                class="form-check-input"
+                                type="radio"
+                                name="gender"
+                                value="female"
+                            >
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" name="inputAddress">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" name="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <input type="text" class="form-control" name="inputState">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" name="inputZip">
+                    </div>
+                </div>
+                <button type="submit" onclick="document.getElementById('dform').submit()"  form="dform" value="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
+            </form>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+</div>
+<br>
+<br>
+{% endblock %}
