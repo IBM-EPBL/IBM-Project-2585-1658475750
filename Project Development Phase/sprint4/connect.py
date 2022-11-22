@@ -6,7 +6,7 @@ import os
 
 dbname = "bludb"
 username = "mvd08362"
-password = "6BGU3K1LeFvfmCP4"
+password = os.getenv("PS")
 hostname = "0c77d6f2-5da9-48a9-81f8-86b520b87518.bs2io90l08kqb1od8lcg.databases.appdomain.cloud"
 cert = "DigiCertGlobalRootCA.crt"
 port = 31198

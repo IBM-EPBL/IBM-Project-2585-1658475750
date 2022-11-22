@@ -33,7 +33,7 @@ def insertDonor(name , age , email , bloodgrp , mobno, gender , inputAddress , i
     return r
 
 import os
-sg = sendgrid.SendGridAPIClient(api_key="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")
+sg = sendgrid.SendGridAPIClient(api_key=os.getenv("PL"))
 from_email = Email("manoj.selvam312@gmail.com")  # Change to your verified sender
 
 def process_request(name , age , email , bloodgrp , mobno, gender , inputAddress , inputCity, inputState , inputZip ):
