@@ -1,0 +1,249 @@
+{% extends 'base.html' %}
+{% block content %}
+<body>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="{{ url_for('static', filename='images/bg_img.jpeg')}}" alt="Image" class="img-fluid">
+                </div>
+                <div class="col-md-6 order-md-2">
+                    <div class="box">
+                        <h1 class="heading">
+                            Be a Hero.
+                            <br>
+                            Donate Plasma.
+                        </h1>
+                        <p>
+                            Plasma donation is one of the most important ways to save lives. One plasma donation can save three lives.
+                            <br>
+                            Donating plasma can help others in need, and you can help others by donating.
+                        </p>
+                        <strong style="font-size: 18px;">Join with us today!</strong>
+                    </div>
+                    <!-- <div class="box mt-4">
+                        <button class="btn btn-primary mr-3">Donate</button>
+                        <button class="btn btn-primary">Request</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about-us">
+        <div class="container-fluid" style="background-color: #A1CEC7;">
+            <div class="text-center">
+                <img
+                    style="width: 60%;"
+                    src="{{url_for('static',filename='images/aboutus.jpg')}}"
+                    alt=""
+                    srcset=""
+                >
+            </div>
+        </div>
+        <div class="container-fluid my-5">
+            <div class="row">
+                <div class="col-lg-1 mr-5"></div>
+                <div class="col-lg-3">
+                    <div class="card about-card p-2 my-4">
+                        <img class="card-img-top" src="{{url_for('static',filename='images/people.svg')}}" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="heading">About us</h4>
+                            <p class="card-text">We collect blood plasma to help create high-quality, lifesaving therapies for patients worldwide, improving our donors' lives along the way.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card about-card p-2 my-4">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="rgb(207, 16, 16)"
+                            class="bi bi-heart-pulse card-img-top"
+                            viewBox="0 0 16 16"
+                        >
+                            <path fill-rule="evenodd" d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053.918 3.995.78 5.323 1.508 7H.43c-2.128-5.697 4.165-8.83 7.394-5.857.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17c3.23-2.974 9.522.159 7.394 5.856h-1.078c.728-1.677.59-3.005.108-3.947C13.486.878 10.4.28 8.717 2.01L8 2.748ZM2.212 10h1.315C4.593 11.183 6.05 12.458 8 13.795c1.949-1.337 3.407-2.612 4.473-3.795h1.315c-1.265 1.566-3.14 3.25-5.788 5-2.648-1.75-4.523-3.434-5.788-5Zm8.252-6.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.5a.5.5 0 0 0 0 1H4a.5.5 0 0 0 .416-.223l1.473-2.209 1.647 4.118a.5.5 0 0 0 .945-.049l1.598-5.593 1.457 3.642A.5.5 0 0 0 12 9h3.5a.5.5 0 0 0 0-1h-3.162l-1.874-4.686Z"/>
+                        </svg>
+                        <div class="card-body">
+                            <h4 class="heading">
+                                One Small Act
+                                <br>
+                                One Huge Impact
+                            </h4>
+                            <p class="card-text">Regularly donativng critical blood plasma helps you save lives and creates a huge impact.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card about-card p-2 my-4">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="#F0B91E"
+                            class="bi bi-droplet-fill card-img-top"
+                            viewBox="0 0 16 16"
+                        >
+                            <path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6ZM6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13Z"/>
+                        </svg>
+                        <div class="card-body">
+                            <h4 class="heading">
+                                Our Donors
+                                <br>
+                                Make a Difference
+                            </h4>
+                            <p class="card-text">Simply donating blood plasma can do so much good!</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </div>
+    <div id="about-plasma" class="about-plasma">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img class="about-plasma-img" src="{{url_for('static',filename='images/img1.jpg')}}" alt="">
+                </div>
+                <div class="col-lg-6 mt-4">
+                    <h2 class="heading">Why Donating Plasma Matters</h2>
+                    <p>Human blood's plasma is a crucial component of the therapies used to treat a wide range of illnesses, including severe burns and trauma, immunological deficiencies, and bleeding problems. Donors provide a lifeline to someone in need by giving plasma.</p>
+                    <p>Many individuals are unaware that a single patient's demands necessitate numerous plasma donations. Because regular donations are essential to maintaining a sufficient supply of plasma, we think highly of them.</p>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+        <div class="container-fluid" style="background-color: #E5E8F1;">
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-6 mt-5">
+                    <h2 class="heading">Donating Is Safe and Easy</h2>
+                    <p>Plasma, which is the liquid component of blood, represents about half of total blood volume. Proteins, minerals, waste materials, clotting factors, hormones, and immunoglobins make up the remaining 10% of plasma's composition, which is composed of about 90% water.</p>
+                    <p>
+                        Donating plasma is a lot like giving blood, but unlike whole blood donation, plasma donations can be done twice a week. Blood cells that are restored to the body are isolated from plasma during the donation process.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <img class="about-plasma-img" src="{{url_for('static',filename='images/img2.jpg')}}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="faq">
+        <div class="faq-body">
+            <div class="accordion">
+                <div class="image-box">
+                    <img src="{{url_for('static',filename='images/FAQs.svg')}}" alt="" srcset="">
+                </div>
+                <div class="accordion-text">
+                    <div class="title">Frequently Asked Questions(FAQs)</div>
+                    <ul class="faq-text">
+                        <li>
+                            <div class="question-arrow">
+                                <span class="question">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                </span>
+                                <i class="bx bxs-chevron-down arrow"></i>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                <br>
+                            </p>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <div class="question-arrow">
+                                <span class="question">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                </span>
+                                <i class="bx bxs-chevron-down arrow"></i>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                <br>
+                            </p>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <div class="question-arrow">
+                                <span class="question">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                </span>
+                                <i class="bx bxs-chevron-down arrow"></i>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                <br>
+                            </p>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <div class="question-arrow">
+                                <span class="question">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                </span>
+                                <i class="bx bxs-chevron-down arrow"></i>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                <br>
+                            </p>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <div class="question-arrow">
+                                <span class="question">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                </span>
+                                <i class="bx bxs-chevron-down arrow"></i>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                <br>
+                            </p>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <div class="question-arrow">
+                                <span class="question">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                </span>
+                                <i class="bx bxs-chevron-down arrow"></i>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                <br>
+                            </p>
+                            <span class="line"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let li = document.querySelectorAll(".faq-text li");
+        for (var i = 0; i < li.length; i++) {
+          li[i].addEventListener("click", (e)=>{
+            let clickedLi;
+            if(e.target.classList.contains("question-arrow")){
+              clickedLi = e.target.parentElement;
+            }else{
+              clickedLi = e.target.parentElement.parentElement;
+            }
+           clickedLi.classList.toggle("showAnswer");
+          });
+        }
+    </script>
+</body>
+</html>
+{% endblock %}
+<!-- <div class="idxpg">
+		<form action="/login" method="post">
+			<input type="submit" value="Login"/>
+		</form>
+		<button class="btn"> <a href="{{ url_for('login')}}">Login</a> </button> 
+		<button class="btn"> <a href="{{ url_for('register')}}">Register</a> </button> 
+	</div> -->
