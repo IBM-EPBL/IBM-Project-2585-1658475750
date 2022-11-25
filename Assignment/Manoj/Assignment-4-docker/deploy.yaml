@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: plapp
+  template:
+    metadata:
+      labels:
+        app: plapp
+    spec:
+      containers:
+      - name: plapp
+        image: icr.io/plapp/plasma:latest
+        ports:
+        - containerPort: 5000
+        imagePullPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: service
+spec:
+  selector:
+    app: plapp
+  type: NodePort
+  ports:
+   - port: 5000
+     nodePort: 31514

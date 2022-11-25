@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <form
+                action="{{ url_for('requests') }}"
+                method="post"
+                class="request-form"
+                name="rform"
+                id="rform"
+            >
+                <h2 class="heading">Request Form</h2>
+                <div style="
+                    width: 80px;
+                    position: relative;
+                    border-top: 5px solid black;
+                  "></div>
+                <br>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Name</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            name="name"
+                        >
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="age">Age</label>
+                        <input
+                            type="number"
+                            class="form-control"
+                            id="age"
+                            name="age"
+                        >
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            name="email"
+                        >
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="bloodgrp">Blood Group</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="bloodgrp"
+                            name="bloodgrp"
+                        >
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="mobno">Phone Number</label>
+                        <input
+                            type="number"
+                            class="form-control"
+                            id="mobno"
+                            name="mobno"
+                        >
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="gender">Gender</label>
+                        <br>
+                        <div class="form-check form-check-inline">
+                            <input
+                                class="form-check-input"
+                                type="radio"
+                                name="gender"
+                                id="male"
+                                value="male"
+                            >
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input
+                                class="form-check-input"
+                                type="radio"
+                                name="gender"
+                                id="female"
+                                value="female"
+                            >
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Address</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="inputAddress"
+                        name="inputAddress"
+                    >
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="inputCity"
+                            name="inputCity"
+                        >
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="inputState"
+                            name="inputState"
+                        >
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="inputZip"
+                            name="inputZip"
+                        >
+                    </div>
+                </div>
+                <button
+                    type="submit"
+                    onclick="document.getElementById('rform').submit()"
+                    form="rform"
+                    value="submit"
+                    class="btn btn-primary"
+                    style="width: 100%;"
+                >Submit</button>
+            </form>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+</div>
+<br>
+<br>
+{% endblock %}

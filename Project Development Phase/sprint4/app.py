@@ -73,7 +73,9 @@ def register():
             # print(check_password_hash(password ,"Manoj007!"))
             email=request.form['email']
 
-            addUser(username ,email, password)
+            if addUser(username ,email, password) == "Username Exists":
+                return render_template('login.html', message="User Already Exists")
+                
             return redirect(url_for('login'))
         except:
             return render_template('login.html', message="User Already Exists")

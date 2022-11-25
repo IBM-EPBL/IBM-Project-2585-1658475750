@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: plapp
-        image: icr.io/plapp/plasma@sha256:b2c47beaea88fc0248acc525df80b4e8ac139c7f46e2bac4ad50fcd73b7e8c53
+        image: icr.io/plapp/plasma:latest
         ports:
         - containerPort: 5000
         imagePullPolicy: Always
