@@ -1,0 +1,32 @@
+apiVersion appsv1
+kind Deployment
+metadata
+  name deploy
+spec
+  replicas 3
+  selector
+    matchLabels
+      app p
+  template
+    metadata
+      labels
+        app jobportalapp
+    spec
+      containers
+      - name jobportalapp
+        image icr.iojobportalapplatest
+        ports
+        - containerPort 5000
+        imagePullPolicy Always
+---
+apiVersion v1
+kind Service
+metadata
+  name service
+spec
+  selector
+    app jobportalapp
+  type NodePort
+  ports
+   - port 5000
+     nodePort 31514
